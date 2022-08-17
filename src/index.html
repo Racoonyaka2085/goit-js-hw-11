@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 9</title>
     <link rel="stylesheet" href="css/common.css" />
-  </head>
-  <body>
-    <ul>
-      <li><a href="01-color-switcher.html">Color switcher</a></li>
-      <li><a href="02-timer.html">Countdown timer</a></li>
-      <li><a href="03-promises.html">Promise generator</a></li>
-    </ul>
-  </body>
+</head>
+
+<body>
+    <form class="search-form" id="search-form">
+        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+        <button type="submit">Search</button>
+    </form>
+    <div class="gallery">
+        <!-- Карточки изображений -->
+    </div>
+    <div class="container_load-more">
+        <button type="button" class="load-more is-hidden">Load more</button>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+    <script src="./api-service.js"></script>
+    <script src="./templates/galleryCards.hbs"></script>
+</body>
+
 </html>
